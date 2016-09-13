@@ -1,0 +1,31 @@
+{
+  "name": "skeleton-key",
+  "version": "1.0.0",
+  "description": "Cache key generator",
+  "main": "lib/key.js",
+  "scripts": {
+    "test": "istanbul cover --print both nodeunit ./test/index.js",
+    "lint": "eslint .",
+    "coverage": "istanbul check-coverage --statements 100 --lines 100 --branches 100 --functions 100"
+  },
+  "author": "Elliott Foster <elliottf@codebrews.com> (http://codebrews.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "object-hash": "^1.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb-base": "^7.1.0",
+    "eslint-plugin-import": "^1.15.0",
+    "ghooks": "^1.3.2",
+    "istanbul": "^0.4.5",
+    "nodeunit": "^0.10.2"
+  },
+  "config": {
+    "pre-commit": "npm run lint",
+    "pre-push": "npm t"
+  },
+  "engines": {
+    "node": ">=4.2"
+  }
+}
