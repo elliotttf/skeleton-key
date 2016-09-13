@@ -3,6 +3,7 @@
 _A simple object hash generator_
 
 [![Build Status](https://travis-ci.org/elliotttf/skeleton-key.svg?branch=master)](https://travis-ci.org/elliotttf/skeleton-key)
+[![Coverage Status](https://coveralls.io/repos/github/elliotttf/skeleton-key/badge.svg?branch=master)](https://coveralls.io/github/elliotttf/skeleton-key?branch=master)
 
 This module will allow you to generate object hashes from a collection of values.
 The values can be inserted in any order and as long as they are equal a matching

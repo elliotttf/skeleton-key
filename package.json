@@ -6,7 +6,8 @@
   "scripts": {
     "test": "istanbul cover --print both nodeunit ./test/index.js",
     "lint": "eslint .",
-    "coverage": "istanbul check-coverage --statements 100 --lines 100 --branches 100 --functions 100"
+    "coverage": "istanbul check-coverage --statements 100 --lines 100 --branches 100 --functions 100",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "author": "Elliott Foster <elliottf@codebrews.com> (http://codebrews.com/)",
   "repository": "elliotttf/skeleton-key",
@@ -15,6 +16,7 @@
     "object-hash": "^1.1.4"
   },
   "devDependencies": {
+    "coveralls": "^2.11.12",
     "eslint": "^3.5.0",
     "eslint-config-airbnb-base": "^7.1.0",
     "eslint-plugin-import": "^1.15.0",
