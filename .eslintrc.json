@@ -6,19 +6,23 @@
   "extends": "airbnb-base",
   "rules": {
     "brace-style": ["error", "stroustrup"],
-    "comma-dangle": ["error", "only-multiline"],
     "max-len": ["warn", {
       "code": 100,
       "comments": 80,
       "ignoreUrls": true,
+      "ignorePattern": "(logger\\.|new Error\\)|new TypeError\\()",
       "ignoreTrailingComments": true,
       "tabWidth": 2
     }],
-    "no-param-reassign": ["warn", {"props": false}],
-    "no-underscore-dangle": "off",
     "no-warning-comments": "warn",
-    "object-curly-spacing": ["error", "never"],
     "quotes": ["error", "single", {"avoidEscape": true, "allowTemplateLiterals": true}],
-    "strict": ["error", "global"]
+    "require-jsdoc": ["error", {
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true
+      }
+    }],
+    "valid-jsdoc": "error"
   }
 }

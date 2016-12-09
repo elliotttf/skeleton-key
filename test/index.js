@@ -31,7 +31,7 @@ module.exports = {
       this.key.setNotch('test', [1, 2, 3], true, (a, b) => (a > b ? -1 : 1));
       test.deepEqual([3, 2, 1], this.key.getNotch('test'), 'Notch not sorted.');
       test.done();
-    }
+    },
   },
   getNotch(test) {
     test.expect(1);
@@ -55,9 +55,9 @@ module.exports = {
     },
     withObjects(test) {
       test.expect(2);
-      this.key.setNotch('test', {a: 1, b: 2});
+      this.key.setNotch('test', { a: 1, b: 2 });
       test.equal('a423fe10cbb06863a07d44ac5d2168df', this.key.cut(), 'Unexpected hash.');
-      this.key.setNotch('test', {b: 2, a: 1});
+      this.key.setNotch('test', { b: 2, a: 1 });
       test.equal('a423fe10cbb06863a07d44ac5d2168df', this.key.cut(), 'Unexpected hash.');
       test.done();
     },
@@ -68,7 +68,7 @@ module.exports = {
       this.key.setNotch('test', [3, 2, 1], true);
       test.equal('21c354dd04e7aac0afc8e3e3693bba80', this.key.cut(), 'Unexpected hash.');
       test.done();
-    }
-  }
+    },
+  },
 };
 
