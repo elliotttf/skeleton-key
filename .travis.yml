@@ -1,8 +1,18 @@
 language: node_js
-sudo: false
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
 node_js:
-  - "4"
-  - "6"
-  - "node"
-script: npm run lint && npm test
-after_success: npm run coveralls
+  - '7'
+  - '6'
+before_script:
+  - npm prune
+script: npm run lint && npm t
+after_success:
+  - npm run coveralls
+  - npm run semantic-release
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
