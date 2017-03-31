@@ -52,6 +52,9 @@ key.setNotch('fields', ['occupation', 'name', 'birthday'], true);
 
 ## API
 
+* `constructor(algo = 'sha1')`
+   * algo – the hashing algorithm to use when creating the key, defaults
+     to `sha1`. Possible options: `sha1`, `MD5`.
 * `resetKey()` - Removes all notches from the key.
 * `setNotch(id, notch[, sort, [comparator]])` - Adds a notch to the key or
   replaces an existing notch.
