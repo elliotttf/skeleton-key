@@ -1,5 +1,7 @@
 # Skeleton Key
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/elliotttf/skeleton-key.svg)](https://greenkeeper.io/)
+
 _A simple object hash generator_
 
 [![Build Status](https://travis-ci.org/elliotttf/skeleton-key.svg?branch=master)](https://travis-ci.org/elliotttf/skeleton-key)
