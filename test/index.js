@@ -1,4 +1,5 @@
 'use strict';
+
 const SkeletonKey = require('../');
 
 module.exports = {
