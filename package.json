@@ -14,7 +14,7 @@
   "repository": "elliotttf/skeleton-key",
   "license": "MIT",
   "dependencies": {
-    "object-hash": "^1.1.4"
+    "object-hash": "^2.0.3"
   },
   "devDependencies": {
     "coveralls": "^2.11.12",
